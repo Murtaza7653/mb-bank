@@ -10,7 +10,6 @@ export default function Customers() {
                 const response = await fetch('http://localhost/bank-api/api.php');
                 const jsonResponse = await response.json();
                 setCustomers(jsonResponse);
-                // console.log(jsonResponse);
             } catch (error) {
                 console.log(error);
             }
@@ -23,7 +22,7 @@ export default function Customers() {
             <div className="row">
                 {customers.map((customer) => {
                     return <div className="col-md-3 d-flex justify-content-center" key={customer.account}>
-                        <Customer account={customer.account} name={customer.name} contact={customer.contact} balance={customer.balance} />
+                        <Customer account={customer.account} name={customer.name} gender={customer.gender} contact={customer.contact} balance={customer.balance}/>
                     </div>
                 })}
             </div>

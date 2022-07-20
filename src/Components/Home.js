@@ -51,10 +51,10 @@ export default function Home() {
                     <span className="visually-hidden">Next</span>
                 </button>
             </div>
-            <div className='container my-3' style={{width: "1000px", whiteSpace:"nowrap"}}>
+            <div className='container my-3' style={{margin: "auto"}}>
                 <button style={{display:"inline-block", width: "30%", marginRight:"5%"}} type="button" className="btn btn-outline-primary" onClick={()=>{navigate('/customers')}}>View All Customers</button>
                 <button style={{display:"inline-block", width: "30%", marginRight:"5%"}} type="button" className="btn btn-outline-primary" onClick={()=>{navigate('/transfer')}}>Initiate Transfer</button>
-                <button style={{display:"inline-block", width: "30%"}} type="button" className="btn btn-outline-primary" onClick={()=>{navigate('/balance')}}>View Balance</button>
+                <button style={{display:"inline-block", width: "30%"}} type="button" className="btn btn-outline-primary" onClick={()=>{navigate('/about')}}>About Us</button>
             </div>
         </div>
 
